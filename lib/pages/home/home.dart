@@ -40,10 +40,10 @@ class ListingPage extends StatelessWidget {
                             Text("CS101", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
                             Container(
                               height: 20,
-                              width: 70,
-                              child: Center(child: Text("Milking",style: TextStyle(color: Colors.amber,),)),
+                              width: 50,
+                              child: Center(child: Text("Male",style: TextStyle(color: Colors.green,),)),
                               decoration: BoxDecoration(
-                                border: Border.all(color: Colors.amber),
+                                border: Border.all(color: Colors.green),
                                   borderRadius: BorderRadius.circular(10)
                               ),
 
@@ -54,22 +54,39 @@ class ListingPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               AgeWight(head: "Age", detail: "1 Y 3 M",),
-
+                              SizedBox(width: 50,),
                               AgeWight(head: "Weight", detail: "300 KG",),
                             ],
                           ),
-
                           Spacer(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              ClipRRect(
-                                  borderRadius: BorderRadius.circular(200.0),
-                                  child: Image.asset("images/img.png", height: 40, width: 40,)
+                              Container(
+                                height: 20,
+                                width: 70,
+                                child: Center(child: Text("Milking",style: TextStyle(color: Colors.amber,),)),
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.amber),
+                                    borderRadius: BorderRadius.circular(10)
+                                ),
+
+                              ),
+                              SizedBox(width: 20,),
+                              Container(
+                                height: 20,
+                                width: 120,
+                                child: Center(child: Text("3rd Laction",style: TextStyle(color: Colors.amber,),)),
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.amber),
+                                    borderRadius: BorderRadius.circular(10)
+                                ),
+
                               ),
 
 
                             ],),
+
                         ],
                       ),
                     )
